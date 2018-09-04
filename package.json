@@ -1,0 +1,25 @@
+{
+  "name": "vue-src-code-study",
+  "version": "1.0.0",
+  "description": "### 目录结构整理",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register ./mocha_learn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bob2622/vue-src-code-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bob2622/vue-src-code-study/issues"
+  },
+  "homepage": "https://github.com/Bob2622/vue-src-code-study#readme"
+}
