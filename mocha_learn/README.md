@@ -1,3 +1,7 @@
+## 参考资料
+* [官方文档](https://mochajs.org/)
+* [中文文档1](https://segmentfault.com/a/1190000011362879)
+* [中文文档2](https://www.jianshu.com/p/9c78548caffa)
 
 ## QA
 
@@ -50,8 +54,24 @@ $ npm install babel-core babel-preset-es2015 --save-dev
 {
     ...
     "scripts": {
-        "test": "mocha --compilers js:babel-core/register ./mocha_learn"
+        "test": "mocha --require babel-core/register ./mocha_learn"
     },
+    ...
+}
+```
+<br/>
+
+> 使用 ES7 中 async/await
+
+```
+$ npm install --save-dev babel-plugin-transform-runtime babel-plugin-transform-async-to-generator
+```
+
+在 `.babelrc` 中配置
+```
+{
+    ...
+    plugins: [ "transform-runtime", "babel-plugin-transform-async-to-generator" ]
     ...
 }
 ```
